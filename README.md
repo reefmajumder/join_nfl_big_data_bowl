@@ -1,5 +1,5 @@
 
-<img src="extras/bdb.png" align="right" />
+<img src="extras/bdb.jpg" align="center" />
 
 Welcome to the data homepage for the NFL's Big Data Bowl.
 
