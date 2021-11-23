@@ -8,13 +8,13 @@ For those interested in trying NFL tracking data via [Next Gen Stats](https://ne
 What remains in this repository
 -------------------------------
 
-1.  Player tracking data one 2017 game. See <https://github.com/nfl-football-ops/Big-Data-Bowl/tree/master/Data>. Tracking data is stored as a unique .csv file: `tracking_gameId_[gameId].csv`, where `[gameId]` is a unique, 10-digit identifier for each game.
+1.  Player tracking data one 2017 game. See <>. Tracking data is stored as a unique .csv file: `tracking_gameId_[gameId].csv`, where `[gameId]` is a unique, 10-digit identifier for each game.
 
-2.  Player, play, and game-level data that correspond to the tracking data. See <https://github.com/nfl-football-ops/Big-Data-Bowl/tree/master/Data> for each of these .csv files.
+2.  Player, play, and game-level data that correspond to the tracking data. See <> for each of these .csv files.
 
-3.  A Data schema, which contains information on each of the variables in the data set, as well as the *key* variables needed to link the data sets together. See <https://github.com/nfl-football-ops/Big-Data-Bowl/blob/master/schema.md>.
+3.  A Data schema, which contains information on each of the variables in the data set, as well as the *key* variables needed to link the data sets together. See <>.
 
-4.  A list of Data FAQs. See <https://github.com/nfl-football-ops/Big-Data-Bowl/blob/master/faqs.md>.
+4.  A list of Data FAQs. See <>.
 
 
 Official rules
