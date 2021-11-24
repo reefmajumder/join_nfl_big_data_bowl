@@ -5,6 +5,16 @@ Welcome to the data homepage for the NFL's Big Data Bowl.
 
 For those interested in trying NFL tracking data via [Next Gen Stats](https://nextgenstats.nfl.com/), there is a style guide with references to each data set and each variable, a list of FAQs related to player tracking data and this contest, and a tutorial on how to visualize and animate the player tracking data using the , and one game of tracking information.
 
+How does Next Gen Stats work ?
+
+* Every NFL player on the field (both on offense and defense) during active plays is tracked in terms of the capturing of their real-time location data, speed and acceleration
+Sensors throughout the stadium track radio frequency identification (RFID) tags placed within the players' shoulder-pads, charting movements in a highly accurate manner
+* The actual football is also tracked as an independent entity, opening up intriguing possibilities for analysis...
+* All real-time data is processed entirely on an advanced machine learning based Amazon Web Services (AWS) infrastructure. Data is streamed towards the NFL stats page. FYI, Data scientists call this a pipeline.
+* RFID tags: Designed by Zebra Technologies (official on-field player-tracking technology partner of the NFL), they consist of an integrated circuit (IC) attached to an antenna typically a small coil of wires plus some protective packaging as determined by the application requirements. They are active in this case and not passive.
+* Follow NextGenStats Twitter, you will never look at NFL football the same again
+* These real-time stats on players create a deeper fan experience and the NFL should be complimented on their choice to push the boundaries of analytics
+
 Data Description
 -------------------------------
 
