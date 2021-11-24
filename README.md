@@ -15,17 +15,6 @@ Sensors throughout the stadium track radio frequency identification (RFID) tags 
 * Follow NextGenStats Twitter, you will never look at NFL football the same again
 * These real-time stats on players create a deeper fan experience and the NFL should be complimented on their choice to push the boundaries of analytics
 
-Data Description
--------------------------------
-
-1.  Player tracking data one 2017 game. See <>. Tracking data is stored as a unique .csv file: `tracking_gameId_[gameId].csv`, where `[gameId]` is a unique, 10-digit identifier for each game.
-
-2.  Player, play, and game-level data that correspond to the tracking data. See <> for each of these .csv files.
-
-3.  A Data schema, which contains information on each of the variables in the data set, as well as the *key* variables needed to link the data sets together. See <>.
-
-4.  A list of Data FAQs. See <>.
-
 
 Official rules
 --------------
@@ -55,12 +44,25 @@ def windspeed(x):
         return 0
 ```
 
-### Animating the data
-
-The following code animates each player that was on the field. As one note, the code is flexible, such that plays at different parts of the field could feature different boundaries. As a second, the x-axis and y-axis coordinates are flipped.
+### Using keras and k-fold cross validation
 
 ``` 
+from sklearn.model_selection import KFold
+kfold=KFold(n_splits=3,shuffle=True)
 
+for train_ind,val in kfold.split(X,y):
+    
+    x_train,xval = X.iloc[train_ind],X.iloc[val]
+    y_train,yval= y.iloc[train_ind],y.iloc[val]
+    
+    y_train=transform_y(x_train,y_train)
+    y_val=transform_y(xval,yval)
+    
+    model=None
+    model=create_model()
+    
+    history=model.fit(x_train,y_train,epochs=20,validation_data=[xval,y_val],verbose=1)
+    print('validation accuracy : {}'.format(np.mean(history.history['val_accuracy'])))
 
 ```
 
