@@ -5,6 +5,16 @@ Welcome to the data homepage for the NFL's Big Data Bowl.
 
 For those interested in trying NFL tracking data via [Next Gen Stats](https://nextgenstats.nfl.com/), there is a style guide with references to each data set and each variable, a list of FAQs related to player tracking data and this contest, and a tutorial on how to visualize and animate the player tracking data using the , and one game of tracking information.
 
+![](assets/pet-records.gif)
+
+setup
+
+```
+git clone https://github.com/reefmajumder/join_nfl_big_data_bowl.git
+cd pet-days/
+jupyter nfl-big-data-bowl-notebook
+```
+
 How does Next Gen Stats work ?
 
 * Every NFL player on the field (both on offense and defense) during active plays is tracked in terms of the capturing of their real-time location data, speed and acceleration
