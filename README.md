@@ -61,18 +61,6 @@ The following code animates each player that was on the field. As one note, the 
 
 ``` 
 
-``` 
-
-
-## General field boundaries
-
-
-
-## Specific boundaries for a given play
-
-
-## Ensure timing of play matches 10 frames-per-second
-
 
 ```
 
